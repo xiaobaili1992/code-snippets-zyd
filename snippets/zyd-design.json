@@ -1,0 +1,87 @@
+{
+  "ZydLargeScreenScale": {
+    "prefix": "zlss",
+    "body": [
+      "<ZydLargeScreenScale width=\"${1}\" height=\"${2}\">${3}</ZydLargeScreenScale>",
+      "${4}"
+    ],
+    "description": "zyd large screen scale"
+  },
+  "ZydLongTextTooltip": {
+    "prefix": "zltt",
+    "body": [
+      "<ZydLongTextTooltip text=\"${1}\" />",
+      "${2}"
+    ],
+    "description": "zyd long text tooltip"
+  },
+  "ZydOperateBtn": {
+    "prefix": "zob",
+    "body": [
+      "<ZydOperateBtn :operateBtnConfig=\"${1}\" :partitionNum=\"${2}\" :dataSource=\"${3}\" />",
+      "${4}"
+    ],
+    "description": "zyd operate btn"
+  },
+  "ZydOperateBtn operateBtnConfig": {
+    "prefix": "zobc",
+    "body": [
+      "const operateBtnConfig = [",
+        "\t{\r",
+          "\t\tlabel: '续约1',\r",
+          "\t\tkey: 'operate1',\r",
+          "\t\tattrs: {}, // element-ui button按钮的属性\r",
+          "\t\tevents: {\r",
+            "\t\t\t// element-ui button按钮的方法",
+            "\t\t\tclick(daSource, e) {\r",
+              "\t\t\t\tconsole.error('daSource, e', daSource, e);\r",
+            "\t\t\t},\r",
+          "\t\t},\r",
+        "\t},\r",
+        "\t{\r",
+          "\t\tlabel: '续约2',\r",
+          "\t\tkey: 'operate2',\r",
+          "\t\tattrs: {},\r",
+          "\t\tevents: {\r",
+            "\t\t\tclick(daSource, e) {\r",
+              "\t\t\t\tconsole.error('daSource, e', daSource, e);\r",
+            "\t\t\t},\r",
+          "\t\t},\r",
+        "\t},\r",
+        "\t{\r",
+          "\t\tlabel: '续约3',\r",
+          "\t\tkey: 'operate3',\r",
+          "\t\tattrs: {},\r",
+          "\t\tevents: {\r",
+            "\t\t\tclick(daSource, e) {\r",
+              "\t\t\t\tconsole.error('daSource, e', daSource, e);\r",
+            "\t\t\t},\r",
+          "\t\t},\r",
+        "\t},\r",
+      "];"
+    ],
+    "description": "zyd operate btn operateBtnConfig"
+  },
+  "ZydTag ": {
+    "prefix": "zt",
+    "body": [
+      "<ZydTag color=\"${1}\">${2}</ZydTag>",
+      "${3}"
+    ],
+    "description": "zyd tag"
+  },
+  "ZydSplitPane": {
+    "prefix": "zsp",
+    "body": [
+      "<ZydSplitPane>\r",
+        "\t<template slot=\"left\">\r",
+          "\t\t<div class=\"left\">${1}</div>\r",
+        "\t</template>\r",
+        "\t<template slot=\"right\">\r",
+          "\t\t<div class=\"right\">${2}</div>\r",
+        "\t</template>\r",
+      "</ZydSplitPane>\r"
+    ],
+    "description": "zyd split pane"
+  }
+}

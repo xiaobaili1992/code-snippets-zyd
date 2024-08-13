@@ -1,0 +1,319 @@
+{
+  "zyd Vue Data": {
+    "prefix": "data",
+    "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
+    "description": "Vue Component Data"
+  },
+  "zyd Vue Methods": {
+    "prefix": "methods",
+    "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
+    "description": "vue method"
+  },
+  "zyd Vue Computed": {
+    "prefix": "computed",
+    "body": [
+      "computed: {",
+      "\t${1:name}() {",
+      "\t\treturn this.${2:data} ${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "computed value"
+  },
+  "zyd Vue Lifecycle beforeCreate": {
+    "prefix": "beforecreate",
+    "body": ["beforeCreate () {", "\t${0};", "},"],
+    "description": "beforeCreate lifecycle method"
+  },
+  "zyd Vue Lifecycle created": {
+    "prefix": "created",
+    "body": ["created () {", "\t${0};", "},"],
+    "description": "created lifecycle method"
+  },
+  "zyd Vue Lifecycle beforeMount": {
+    "prefix": "beforemount",
+    "body": ["beforeMount () {", "\t${0};", "},"],
+    "description": "beforeMount lifecycle method"
+  },
+  "zyd Vue Lifecycle mounted": {
+    "prefix": "mounted",
+    "body": ["mounted () {", "\t${0};", "},"],
+    "description": "mounted lifecycle method"
+  },
+  "zyd Vue Lifecycle beforeUpdate": {
+    "prefix": "beforeupdate",
+    "body": ["beforeUpdate () {", "\t${0};", "},"],
+    "description": "beforeUpdate lifecycle method"
+  },
+  "zyd Vue Lifecycle updated": {
+    "prefix": "updated",
+    "body": ["updated () {", "\t${0};", "},"],
+    "description": "updated lifecycle method"
+  },
+  "zyd Vue Lifecycle beforeDestroy": {
+    "prefix": "beforedestroy",
+    "body": ["beforeDestroy () {", "\t${0};", "},"],
+    "description": "beforeDestroy lifecycle method"
+  },
+  "zyd Vue Lifecycle destroyed": {
+    "prefix": "destroyed",
+    "body": ["destroyed () {", "\t${0};", "},"],
+    "description": "destroyed lifecycle method"
+  },
+  "zyd Vue Watchers": {
+    "prefix": "watcher",
+    "body": [
+      "watch: {",
+      "\t${1:data}(${2:newValue}, ${3:oldValue}) {",
+      "\t\t${0}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher"
+  },
+  "zyd Vue Watchers with Options": {
+    "prefix": "watcher-options",
+    "body": [
+      "watch: {",
+      "\t${1:data}: {",
+      "\t\timmediate: ${2:true},",
+      "\t\tdeep: ${3:true},",
+      "\t\thandler(${4:newValue}, ${5:oldValue}) {",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t}",
+      "},"
+    ],
+    "description": "vue watcher with options"
+  },
+  "zyd Vue Props with Default": {
+    "prefix": "props",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
+  "zyd Vue Import into the Component": {
+    "prefix": "components",
+    "body": ["components: {", "\t${1:New},", "},"],
+    "description": "Import one component into another, within export statement"
+  },
+  "zyd Vue Import Component Dynamically": {
+    "prefix": "import-dynamic",
+    "body": ["${1:New} = () => import('@/components/${1:New}.vue')"],
+    "description": "Import component that should be lazy loaded"
+  },
+  "zyd Vue MapState": {
+    "prefix": "mapstate",
+    "body": [
+      "import { mapState } from 'vuex';",
+      "",
+      "export default {",
+      "\tcomputed: {",
+      "\t\t...mapState([",
+      "\t\t\t${1:'nameOfState'},",
+      "\t\t])",
+      "\t},",
+      "};"
+    ],
+    "description": "map getters inside a vue component"
+  },
+  "zyd Vue MapGetters": {
+    "prefix": "mapgetters",
+    "body": [
+      "import { mapGetters } from 'vuex';",
+      "",
+      "export default {",
+      "\tcomputed: {",
+      "\t\t...mapGetters([",
+      "\t\t\t${1:'nameOfGetter'},",
+      "\t\t])",
+      "\t},",
+      "};"
+    ],
+    "description": "mapgetters inside a vue component"
+  },
+  "zyd Vue MapMutations": {
+    "prefix": "mapmutations",
+    "body": [
+      "import { mapMutations } from 'vuex';",
+      "",
+      "export default {",
+      "\tmethods: {",
+      "\t\t...mapMutations([",
+      "\t\t\t${1:'nameOfMutation'}, //also supports payload `this.nameOfMutation(amount)` ",
+      "\t\t])",
+      "\t},",
+      "};"
+    ],
+    "description": "mapmutations inside a vue component"
+  },
+  "zyd Vue MapActions": {
+    "prefix": "mapactions",
+    "body": [
+      "import { mapActions } from 'vuex';",
+      "",
+      "export default {",
+      "\tmethods: {",
+      "\t\t...mapActions([",
+      "\t\t\t${1:'nameOfAction'}, //also supports payload `this.nameOfAction(amount)` ",
+      "\t\t])",
+      "\t},",
+      "};"
+    ],
+    "description": "mapactions inside a vue component"
+  },
+  "zyd Vue Filter": {
+    "prefix": "filter",
+    "body": [
+      "filters: {",
+      "\t${1:fnName}: function(${2:value}) {",
+      "\t\treturn ${2:value}${0};",
+      "\t}",
+      "}"
+    ],
+    "description": "vue filter"
+  },
+  "zyd Vue Mixin": {
+    "prefix": "mixin",
+    "body": [
+      "const ${1:mixinName} = {",
+      "\tmounted() {",
+      "\t\tconsole.log('hello from mixin!');",
+      "\t},",
+      "};"
+    ],
+    "description": "vue mixin"
+  },
+  "zyd Vue Use Mixin": {
+    "prefix": "mixin-use",
+    "body": ["mixins: [${1:mixinName}],"],
+    "description": "vue use mixin"
+  },
+  
+  "zyd Vue.config.js Import": {
+    "prefix": "vconfig",
+    "body": [
+      "module.exports = {",
+      "\tcss: {",
+      "\t\tloaderOptions: {",
+      "\t\t\t${1:sass}: {",
+      "\t\t\t\tdata: `${2:@import '@/styles/_variables.scss';}`",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "vue.config.js"
+  },
+  "zyd Vue Composition API - Reactive": {
+    "prefix": "v3reactive",
+    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "description": "Vue Composition api - reactive"
+  },
+  "zyd Vue Composition API - Computed": {
+    "prefix": "v3computed",
+    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "description": "Vue Composition api - computed"
+  },
+  "zyd Vue Composition API - watch - single source": {
+    "prefix": "v3watch",
+    "body": ["watch(() => ${1:foo}, (newValue, oldValue) => {", "\t${2}", "})"],
+    "description": "Vue Composition api - watcher single source"
+  },
+  "zyd Vue Composition API - watch - array": {
+    "prefix": "v3watch-array",
+    "body": [
+      "watch([${1:foo}, ${2:bar}], ([new${1}, new${2}], [prev${1}, prev${2}]) => {",
+      "\t${3}",
+      "})"
+    ],
+    "description": "Vue Composition api - watch as array"
+  },
+  "zyd Vue Composition API - watchEffect": {
+    "prefix": "v3watcheffect",
+    "body": ["watchEffect(() => {", "\t${1}", "})"],
+    "description": "Vue Composition api - watchEffect"
+  },
+  "zyd Vue Composition API - Vue ref": {
+    "prefix": "v3ref",
+    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "description": "Vue Ref"
+  },
+  "zyd Vue Lifecycle Hooks - onMounted": {
+    "prefix": "v3onmounted",
+    "body": ["onMounted(() => {${1}})"],
+    "description": "Vue Mounted Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onBeforeMount": {
+    "prefix": "v3onbeforemount",
+    "body": ["onBeforeMount(() => {${1}})"],
+    "description": "Vue onBeforeMount Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onBeforeUpdate": {
+    "prefix": "v3onbeforeupdate",
+    "body": ["onBeforeUpdate(() => {${1}})"],
+    "description": "Vue onBeforeUpdate Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onUpdated": {
+    "prefix": "v3onupdated",
+    "body": ["onUpdated(() => {${1}})"],
+    "description": "Vue onUpdated Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onErrorCaptured": {
+    "prefix": "v3onerrorcaptured",
+    "body": ["onErrorCaptured(() => {${1}})"],
+    "description": "Vue onErrorCaptured Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onUnmounted": {
+    "prefix": "v3onunmounted",
+    "body": ["onUnmounted(() => {${1}})"],
+    "description": "(destroyed) Vue onUnmounted Lifecycle hook"
+  },
+  "zyd Vue Lifecycle Hooks - onBeforeUnmount": {
+    "prefix": "v3onbeforeunmount",
+    "body": ["onBeforeUnmount(() => {${1}})"],
+    "description": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
+  },
+  "zyd Vue Composition API Reactive Script": {
+    "prefix": "v3reactive-setup",
+    "body": [
+      "import { reactive, toRefs } from 'vue'",
+      "",
+      "export default {",
+      "\tsetup () {",
+      "\t\tconst state = reactive({",
+      "\t\t\t${0:count}: ${1:0},",
+      "\t\t})",
+      "\t",
+      "\t\treturn {",
+      "\t\t\t...toRefs(state),",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "Vue Composition API Script with Reactive"
+  },
+  "zyd Use Composition API within Options API": {
+    "prefix": "v3useinoptions",
+    "body": [
+      "import { ${0:component} } from '@/composables/${0:component}.js'",
+      "",
+      "export default {",
+      "\tsetup () {",
+      "\t\tconst { ${1:name} } = ${0:component}()",
+      "\t",
+      "\t\treturn {",
+      "\t\t\t${1:name}",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "Use Composition API within Options API"
+  }
+}

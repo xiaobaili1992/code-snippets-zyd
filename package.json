@@ -1,0 +1,122 @@
+{
+  "name": "code-snippets-zyd",
+  "displayName": "code-snippets-zyd",
+  "description": "code snippets js vue components template",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "yarn run package",
+    "compile": "webpack",
+    "watch": "webpack --watch",
+    "package": "webpack --mode production --devtool hidden-source-map",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "yarn run compile-tests && yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.92.0",
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "@typescript-eslint/parser": "^7.11.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5",
+    "ts-loader": "^9.5.1",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "snippets.helloWorld",
+        "title": "Hello World"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "html",
+        "path": "./snippets/vue-template.json"
+      },
+      {
+        "language": "vue-html",
+        "path": "./snippets/vue-template.json"
+      },
+      
+      {
+        "language": "javascript",
+        "path": "./snippets/javascript.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/javascript.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "vue",
+        "path": "./snippets/vue-script.json"
+      },
+
+      {
+        "language": "plaintext",
+        "path": "./snippets/gitignore.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/vue.json"
+      }, {
+        "language": "html",
+        "path": "./snippets/vue.json"
+      }, {
+        "language": "vue",
+        "path": "./snippets/vue.json"
+      }, {
+        "language": "vue-html",
+        "path": "./snippets/vue.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/element-ui.json"
+      }, {
+        "language": "html",
+        "path": "./snippets/element-ui.json"
+      }, {
+        "language": "vue",
+        "path": "./snippets/element-ui.json"
+      }, {
+        "language": "vue-html",
+        "path": "./snippets/element-ui.json"
+      },
+
+      {
+        "language": "javascript",
+        "path": "./snippets/zyd-design.json"
+      }, {
+        "language": "html",
+        "path": "./snippets/zyd-design.json"
+      }, {
+        "language": "vue",
+        "path": "./snippets/zyd-design.json"
+      }, {
+        "language": "vue-html",
+        "path": "./snippets/zyd-design.json"
+      }
+    ]
+  }
+}
