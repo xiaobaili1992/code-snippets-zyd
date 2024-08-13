@@ -1,6 +1,7 @@
 {
   "name": "code-snippets-zyd",
   "displayName": "code-snippets-zyd",
+  "publisher": "xiaobai-li",
   "description": "code snippets js vue components template",
   "version": "0.0.1",
   "engines": {
@@ -10,6 +11,10 @@
     "Other"
   ],
   "activationEvents": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiaobai-li/code-snippets-zyd.git"
+  },
   "main": "./dist/extension.js",
   "scripts": {
     "vscode:prepublish": "yarn run package",

@@ -1,71 +1,227 @@
-# snippets README
+## 该插件主要用于提升编码效率
+## 主要包含项目中常用的snippets, js、vue、element-ui、zyd-design、zyd-charts
 
-This is the README for your extension "snippets". After writing up a brief description, we recommend including the following sections.
+## js 包含常用的js语法，规则如下：
+* 多个单词，取每个单词的首字母，区分大小写，eg：console.log取cl；Object.entries取Oe；
+* 多个单词，取每个单词的首字母，如果第二个单词首字母有重复的，继续取，eg：Math.abs取Ma；Math.acos取Mac；Math.acosh取Maco；
+* 小驼峰，取驼峰前后的首字母，不区分大小写，eg：console.countReset取ccr；
+* .(点)运算符，全拼，eg：.concat取.concat；
 
-## Features
+|   Snippet   | Renders                                   |
+|   -------   | ----------------------------------------- |
+|    `cl`     | console.log                               |
+|    `Ok`     | Object.keys                               |
+|    `Oe`     | Object.entries                            |
+|    `Nif`    | Number.isFinite                           |
+|    `ccr`    | console.countReset                        |
+|   `.map`    | .map                                      |
+| `.forEach`  | .forEach                                  |
+| `.toFixed`  | .toFixed                                  |
+|    `Ma`     | Math.abs                                  |
+|    `Mac`    | Math.acos                                 |
+|    `Maco`   | Math.acosh                                |
+|    `Mas`    | Math.asin                                 |
+|    `Masi`   | Math.asinh                                |
+|    `Mat`    | Math.atan                                 |
+|    `Mat2`   | Math.atan2                                |
+|    `Math`   | Math.atanh                                |
+|    `Mc`     | Math.cbrt                                 |
+|    `Mce`    | Math.ceil                                 |
+|    `Mcl`    | Math.clz32                                |
+|    `Mco`    | Math.cosh                                 |
+|    `Mcos`   | Math.cos                                  |
+|    `Mex`    | Math.exp                                  |
+|    `Mex1`   | Math.expm1                                |
+|    `Ml`     | Math.log                                  |
+|    `Ml10`   | Math.log10                                |
+|    `Ml1p`   | Math.log1p                                |
+|    `Ml2`    | Math.log2                                 |
+|    `Mma`    | Math.max                                  |
+|    `Mmi`    | Math.min                                  |
+|    `Mr`     | Math.random                               |
+|    `Mro`    | Math.round                                |
+|    `Ms`     | Math.sinh                                 |
+|    `Msi`    | Math.sin                                  |
+|    `Msig`   | Math.sign                                 |
+|    `Mt`     | Math.tan                                  |
+|    `Mta`    | Math.tanh                                 |
+|    `Mtr`    | Math.trunc                                |
+|    `cla`    | class XXX{}                               |
+|    `clae`   | class XXX extends  YYY {}                 |
+|    `ex`     | export XXX                                |
+|    `exp`    | export {}                                 |
+|    `ed`     | export default XXX                        |
+|    `ef`     | export XXX from YYY                       |
+|    `i`      | import XXX                                |
+|    `imf`    | import XXX from YYYY                      |
+|    `impf`   | import { XXX } from YYYY                  |
+|    `impof`  | import * as XXX from YYYY                 |
+|    `impt`   | import(XXX).then()                        |
+|    `r`      | return XXX                                |
+|    `rn`     | return null                               |
+|    `rt`     | return true                               |
+|    `rf`     | return false                              |
+|    `rth`    | return this                               |
+|    `tc`     | try {} catch() {}                         |
+|    `tf`     | try {} finally {}                         |
+|    `tcf`    | try {} catch() {} finally {}              |
+|    `v`      | var XXX                                   |
+|    `var`    | var XXX = YYY                             |
+|    `l`      | let XXX                                   |
+|    `let`    | let XXX = YYY                             |
+|    `c`      | const XXX                                 |
+|    `const`  | const XXX = YYY                           |
+|    `to`     | XXX ? YYYY : ZZZ                          |
+|    `fl`     | for (let x = y, len = z.length) {}        |
+|    `fi`     | for (let x in y) {}                       |
+|    `fo`     | for (const x of y) {}                     |
+|    `wl`     | while () {}                               |
+|    `sw`     | switch () {}                              |
+|    `fn`     | function() {}                             |
+|    `iife`   | ((){})()                                  |
+|    `st`     | setTimeout(() => {})                      |
+|    `si`     | setInterval(() => {})                     |
+|    `if`     | if () {}                                  |
+|    `ife`    | if () {} else {}                          |
+|    `ifei`   | if () {} else if () {}                    |
+|    `ifeie`  | if () {} else if () {} else {}            |
+|    `el`     | else {}                                   |
+|    `ei`     | else if () {}                             |
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## vue template 包含常用的vue 空模板
 
-For example if there is an image subfolder under your extension project workspace:
+|     Snippet     | Renders                               |
+|     -------     | ------------------------------------- |
+|       `vue`     | vue2 基于scss空模板                    |
+|    `vue-sass`   | vue2 基于sass空模板                    |
+|    `vue-less`   | vue2 基于less空模板                    |
+|    `vue-pcss`   | vue2 基于postcss空模板                 |
+|    `vue-styl`   | vue2 基于stylus空模板                  |
+|    `vue-ts`     | vue2 基于ts空模板                      |
+|    `vue-ns`     | vue2 没有样式空模板                    |
+|    `vue-3`      | vue3 基于scss空模板                    |
+|  `vue-3-setup`  | vue3 setup空模板                       |
+| `vue-3-reactive`| vue3 reactive空模板                    |
+|    `vue-3-ts`   | vue-3-ts空模板                         |
+| `vue-3-ts-setup`| vue-3-ts-setup空模板                   |
 
-\!\[feature X\]\(images/feature-x.png\)
+## vue 包含常用的vue语法
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+|     Snippet     | Renders                                   |
+|     -------     | ----------------------------------------- |
+|     `props`     | props: {}                                 |
+|   `components`  | components: {}                            |
+|      `data`     | data() {}                                 |
+|    `methods`    | methods: {}                               |
+|    `computed`   | computed: {}                              |
+|  `beforecreate` | beforecreate() {}                         |
+|    `created`    | created() {}                              |
+|   `beforemount` | beforemount() {}                          |
+|    `mounted`    | mounted() {}                              |
+|  `beforeupdate` | beforeupdate() {}                         |
+|    `updated`    | updated() {}                              |
+| `beforedestroy` | beforedestroy() {}                        |
+|    `destroyed`  | destroyed() {}                            |
+|     `watch`     | watch: {}                                 |
+|    `watcher`    | watch: {}                                 |
+|    `watcher`    | watch: {}                                 |
+|     `vfor`      | v-for                                     |
+|     `slot`      | slot                                      |
 
-## Requirements
+## element-ui 包含常用的组件，规则如下：
+* 组件都是el-xxx-xxx，取el和后面首字母，如果第二个单词首字母有重复的，继续取，eg：el-button取elb；el-badge取elba；el-breadcrumb取elbr；el-button-group取elbg
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+|     Snippet     | Renders                                   |
+|     -------     | ----------------------------------------- |
+|    `elrow`      | el-row                                    |
+|    `elcol`      | el-col                                    |
+|    `elcon`      | el-container                              |
+|     `elh`       | el-header                                 |
+|    `elas`       | el-aside                                  |
+|    `elm`        | el-main                                   |
+|    `elfo`       | el-footer                                 |
+|    `elb`        | el-button                                 |
+|    `elbg`       | el-button-group                           |
+|    `elrgb`      | el-button-group  Button                   |
+|    `ell`        | el-link                                   |
+|    `elr`        | el-radio                                  |
+|    `elrg`       | el-radio-group                            |
+|    `elrb`       | el-radio-button                           |
+|    `elc`        | el-checkbox                               |
+|    `elcg`       | el-checkbox-group                         |
+|    `elcgb`      | el-checkbox-group button                  |
+|    `elcb`       | el-checkbox-button                        |
+|    `eli`        | el-input                                  |
+|    `elit`       | Textarea                                  |
+|    `ela`        | el-autocomplete                           |
+|    `elin`       | el-input-number                           |
+|    `els`        | el-select                                 |
+|    `elsr`       | el-select Remote Search                   |
+|    `elo`        | el-option                                 |
+|    `elog`       | el-option-group                           |
+|    `elca`       | el-cascader                               |
+|    `elcap`      | el-cascader Panel                         |
+|    `elsw`       | el-switch                                 |
+|    `elsl`       | el-slider                                 |
+|    `elts`       | el-time-select                            |
+|    `eltsr`      | el-time-select Range                      |
+|    `eltp`       | el-time-picker                            |
+|    `eltpr`      | el-time-picker Range                      |
+|    `eldp`       | el-date-picker                            |
+|    `eldpr`      | el-date-picker Range                      |
+|    `eldtp`      | DateTimePicker                            |
+|    `eldtpr`     | DateTimePicker Range                      |
+|    `elu`        | el-upload                                 |
+|    `elra`       | el-rate                                   |
+|    `elcp`       | el-color-picker                           |
+|    `eltr`       | el-transfer                               |
+|    `elf`        | el-form                                   |
+|    `elfi`       | el-form-item                              |
+|    `elt`        | el-table                                  |
+|    `eltc`       | el-table-column                           |
+|    `elta`       | el-tag                                    |
+|    `elpr`       | el-progress                               |
+|    `eltree`     | el-tree                                   |
+|    `elp`        | el-pagination                             |
+|    `elba`       | el-badge                                  |
+|    `elav`       | el-avatar                                 |
+|    `elal`       | el-alert                                  |
+|    `elmen`      | el-menu                                   |
+|    `elsu`       | el-submenu                                |
+|    `elmeni`     | el-menu-item                              |
+|    `eltab`      | el-tabs                                   |
+|    `eltabp`     | el-tab-pane                               |
+|    `elbr`       | el-breadcrumb                             |
+|    `elbri`      | el-breadcrumb-item                        |
+|    `elph`       | el-page-header                            |
+|    `eldr`       | el-dropdown                               |
+|    `eldri`      | const XXX = YYY                           |
+|    `elsts`      | el-steps                                  |
+|    `elst`       | el-step                                   |
+|    `eldi`       | el-dialog                                 |
+|    `elto`       | el-tooltip                                |
+|    `elpo`       | el-popover                                |
+|    `elcard`     | el-card                                   |
+|    `elcar`      | el-carousel                               |
+|    `elcaro`     | el-carousel-item                          |
+|    `elcoll`     | el-collapse                               |
+|    `elcolli`    | el-collapse-item                          |
+|    `elti`       | el-timeline                               |
+|    `eltii`      | el-timeline-item                          |
+|    `eld`        | el-divider                                |
+|    `elcal`      | el-calendar                               |
+|    `elim`       | el-image                                  |
+|    `elback`     | el-backtop                                |
+|    `eldra`      | el-drawer                                 |
 
-## Extension Settings
+## zyd-design 包含常用的组件，规则如下：
+* 组件都是大驼峰格式，取大驼峰的首字母，eg：ZydLargeScreenScale取zlss
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Following extension guidelines
-
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+|   Snippet   | Renders                                   |
+|   -------   | ----------------------------------------- |
+|    `zlss`   | ZydLargeScreenScale                       |
+|    `zltt`   | ZydLongTextTooltip                        |
+|    `zob`    | ZydOperateBtn                             |
+|    `zobc`   | ZydOperateBtn operateBtnConfig            |
+|    `zt`     | ZydTag                                    |
+|    `zsp`    | ZydSplitPane                              |

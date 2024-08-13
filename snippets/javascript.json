@@ -785,12 +785,12 @@
     "description": "The \"Math.abs()\" function returns the absolute value of a number"
   },
   "zyd MathAcos": {
-    "prefix": "Macs",
+    "prefix": "Mac",
     "body": "Math.acos(${0:x})",
     "description": "The \"Math.acos()\" function returns the arccosine (in radians) of a number"
   },
   "zyd MathAcosh": {
-    "prefix": "Macsh",
+    "prefix": "Maco",
     "body": "Math.acosh(${0:x})",
     "description": "The \"Math.acosh()\" function returns the hyperbolic arc-cosine of a number"
   },
@@ -800,7 +800,7 @@
     "description": "The \"Math.asin()\" function returns the arcsine (in radians) of a number"
   },
   "zyd MathAsinh": {
-    "prefix": "Mash",
+    "prefix": "Masi",
     "body": "Math.asinh(${0:x})",
     "description": "The \"Math.asinh()\" function returns the hyperbolic arcsine of a number"
   },
@@ -820,17 +820,17 @@
     "description": "The \"Math.atanh()\" function returns the hyperbolic arctangent of a number"
   },
   "zyd MathCbrt": {
-    "prefix": "Mcb",
+    "prefix": "Mc",
     "body": "Math.cbrt(${0:x})",
     "description": "The \"Math.cbrt()\" function returns the cube root of a number"
   },
   "zyd MathCeil": {
-    "prefix": "Mceil",
+    "prefix": "Mce",
     "body": "Math.ceil(${0:x})",
     "description": "The \"Math.ceil()\" function always rounds a number up to the next largest whole number or integer."
   },
   "zyd MathClz32": {
-    "prefix": "Mclz",
+    "prefix": "Mcl",
     "body": "Math.clz32(${0:x})",
     "description": "The \"Math.clz32()\" function returns the number of leading zero bits in the 32-bit binary representation of a number."
   },
@@ -840,22 +840,22 @@
     "description": "The \"Math.cos()\" static function returns the cosine of the specified angle, which must be specified in radians"
   },
   "zyd MathCosh": {
-    "prefix": "Mcosh",
+    "prefix": "Mco",
     "body": "Math.cosh(${0:x})",
     "description": "The \"Math.cosh()\" function the hyperbolic cosine of a number"
   },
   "zyd MathExp": {
-    "prefix": "Mexp",
+    "prefix": "Mex",
     "body": "Math.exp(${0:x})",
     "description": "The \"Math.exp()\" function returns e^x, where x is the argument, and e is Euler's number (also known as Napier's constant), the base of the natural logarithms."
   },
   "zyd MathExpm1": {
-    "prefix": "Mexpm1",
+    "prefix": "Mex1",
     "body": "Math.expm1(${0:x})",
     "description": "The \"Math.expm1()\" function returns \"e^x - 1\", where x is the argument, and e the base of the natural logarithms."
   },
   "zyd MathFloor": {
-    "prefix": "Mfl",
+    "prefix": "Mf",
     "body": "Math.floor(${0:x})",
     "description": "The \"Math.floor()\" function returns the largest integer less than or equal to a given number."
   },
@@ -865,42 +865,42 @@
     "description": "The \"Math.fround()\" function returns the nearest 32-bit single precision float representation of a Number."
   },
   "zyd MathHypot": {
-    "prefix": "Mhypot",
+    "prefix": "Mh",
     "body": "Math.hypot(${0:numbers})",
     "description": "The \"Math.hypot()\" function returns the square root of the sum of squares of its arguments"
   },
   "zyd MathImul": {
-    "prefix": "Mim",
+    "prefix": "Mi",
     "body": "Math.imul(${1:a}, ${0:b})",
     "description": "The \"Math.imul()\" function returns the result of the C-like 32-bit multiplication of the two parameters."
   },
   "zyd MathLog": {
-    "prefix": "Mlg",
+    "prefix": "Ml",
     "body": "Math.log(${0:x})",
     "description": "The \"Math.log()\" function returns the natural logarithm (base e) of a number"
   },
   "zyd MathLog10": {
-    "prefix": "Mlg10",
+    "prefix": "Ml10",
     "body": "Math.log10(${0:x})",
     "description": "The \"Math.log10()\" function returns the base 10 logarithm of a number"
   },
   "zyd MathLog1p": {
-    "prefix": "Mlg1p",
+    "prefix": "Ml1p",
     "body": "Math.log1p(${0:x})",
     "description": "The \"Math.log1p()\" function returns the absolute value of a number"
   },
   "zyd MathLog2": {
-    "prefix": "Mlg2",
+    "prefix": "Ml2",
     "body": "Math.log2(${0:x})",
     "description": "The \"Math.log2()\" function returns the base 2 logarithm of a number"
   },
   "zyd MathMax": {
-    "prefix": "Mmax",
+    "prefix": "Mma",
     "body": "Math.max(${0:values})",
     "description": "The \"Math.max()\" function the largest of zero or more numbers."
   },
   "zyd MathMin": {
-    "prefix": "Mmin",
+    "prefix": "Mmi",
     "body": "Math.min(${0:values})",
     "description": "The \"Math.min()\" function returns the absolute value of a number"
   },
@@ -910,47 +910,47 @@
     "description": "The \"Math.pow()\" function returns the base to the exponent power, that is, base^exponent."
   },
   "zyd MathRandom": {
-    "prefix": "Mrdm",
+    "prefix": "Mr",
     "body": "Math.random()",
     "description": "The \"Math.random()\" function eturns a floating-point, pseudo-random number in the range 0–1 (inclusive of 0, but not 1) with approximately uniform distribution over that range — which you can then scale to your desired range. The implementation selects the initial seed to the random number generation algorithm; it cannot be chosen or reset by the user."
   },
   "zyd MathRound": {
-    "prefix": "Mrd",
+    "prefix": "Mro",
     "body": "Math.round(${0:x})",
     "description": "The \"Math.round()\" function returns the value of a number rounded to the nearest integer."
   },
   "zyd MathSign": {
-    "prefix": "Msign",
+    "prefix": "Msig",
     "body": "Math.sign(${0:x})",
     "description": "The \"Math.sign()\" function returns the sign of a number, indicating whether the number is positive, negative or zero."
   },
   "zyd MathSin": {
-    "prefix": "Msin",
+    "prefix": "Msi",
     "body": "Math.sin(${0:x})",
     "description": "The \"Math.sin()\" function returns the sine of a number."
   },
   "zyd MathSinh": {
-    "prefix": "Msinh",
+    "prefix": "Ms",
     "body": "Math.sinh(${0:x})",
     "description": "The \"Math.sinh()\" function returns the hyperbolic sine of a number"
   },
   "zyd MathSqrt": {
-    "prefix": "Msqrt",
+    "prefix": "Msq",
     "body": "Math.sqrt(${0:x})",
     "description": "The \"Math.sqrt()\" function returns the square root of a number,"
   },
   "zyd MathTan": {
-    "prefix": "Mtan",
+    "prefix": "Mt",
     "body": "Math.tan(${0:x})",
     "description": "The \"Math.tan()\" function returns the tangent of a number."
   },
   "zyd MathTanh": {
-    "prefix": "Mtanh",
+    "prefix": "Mta",
     "body": "Math.tanh(${0:x})",
     "description": "The \"Math.tan()\" function returns the hyperbolic tangent of a number"
   },
   "zyd MathTrunc": {
-    "prefix": "Mtrunc",
+    "prefix": "Mtr",
     "body": "Math.trunc(${0:x})",
     "description": "The \"Math.trunc()\" function returns the integer part of a number by removing any fractional digits."
   },
@@ -975,12 +975,12 @@
     "description": "The \"JSON.stringify()\" method converts a JavaScript object or value to a JSON string, optionally replacing values if a replacer function is specified or optionally including only the specified properties if a replacer array is specified."
   },
   "zyd Class": {
-    "prefix": "cls",
+    "prefix": "cla",
     "body": ["class ${1:Name} {", "\t$0", "}"],
     "description": "Create a class."
   },
   "zyd ClassExtend": {
-    "prefix": "clsx",
+    "prefix": "clae",
     "body": [
       "class ${1:Name} extends ${2:BaseClass} {",
       "\tconstructor(${3:arguments}) {",
@@ -997,47 +997,47 @@
     "description": "Constructor"
   },
   "zyd Export": {
-    "prefix": "ep",
+    "prefix": "ex",
     "body": "export ${0:member}",
     "description": "Export individual features"
   },
   "zyd ExportList": {
-    "prefix": "epl",
+    "prefix": "exp",
     "body": "export { ${0:names} \\}",
     "description": "Export list"
   },
   "zyd ExportDefault": {
-    "prefix": "epd",
+    "prefix": "ed",
     "body": "export default ${1:member}",
     "description": "Export default module"
   },
   "zyd ExportAggregating": {
-    "prefix": "epf",
+    "prefix": "ef",
     "body": "export ${0:*} from '$1'",
     "description": "Export aggregating modules"
   },
   "zyd Import": {
-    "prefix": "ip",
+    "prefix": "i",
     "body": "import '$0'",
     "description": "Import a module for its side effects only"
   },
   "zyd ImportDefault": {
-    "prefix": "ipd",
+    "prefix": "imf",
     "body": "import ${0:moduleName} from '$1'",
     "description": "Importing defaults"
   },
   "zyd ImportEntireModule": {
-    "prefix": "ipem",
+    "prefix": "impof",
     "body": "import * as ${0:moduleName} from '$1'",
     "description": "Import an entire module's contents"
   },
   "zyd ImportMultipleExports": {
-    "prefix": "ipme",
+    "prefix": "impf",
     "body": "import { $0 } from '$1'",
     "description": "Import multiple exports from module"
   },
   "zyd ImportDynamic": {
-    "prefix": "ipdn",
+    "prefix": "impt",
     "body": ["import('$1').then((${2:module}) => {", "\t$0", "})"],
     "description": "Dynamic Imports"
   },
@@ -1102,8 +1102,8 @@
     "description": "var statement"
   },
   "zyd VarAssignment": {
-    "prefix": "v=",
-    "body": "var ${1:name} = ${0:value}",
+    "prefix": "var",
+    "body": "var ${0:name} = ${1:value}",
     "description": "var assignment"
   },
   "zyd LetStatement": {
@@ -1112,23 +1112,53 @@
     "description": "let statement"
   },
   "zyd LetAssignment": {
-    "prefix": "l=",
+    "prefix": "let",
     "body": "let ${1:name} = ${2:value}",
     "description": "let assignment"
   },
   "zyd ConstStatement": {
-    "prefix": "co",
+    "prefix": "c",
     "body": "const ${0:name}",
     "description": "const statement"
   },
   "zyd ConstAssignment": {
-    "prefix": "co=",
-    "body": "const ${2:name} = ${1:value}",
+    "prefix": "const",
+    "body": "const ${1:name} = ${2:value}",
     "description": "const assignment"
   },
   "zyd TernaryOperator": {
     "prefix": "to",
     "body": "${1:condition} ? ${2:value1} : ${3:value2}"
+  },
+  "zyd IfStatement": {
+    "prefix": "if",
+    "body": ["if (${0:name}) {", "\t$1", "}"],
+    "description": "if statement"
+  },
+  "zyd IfElseStatement": {
+    "prefix": "ife",
+    "body": [
+      "if (${0:name}) {", "\t$1", "}",
+      "else {", "\t$2", "}"
+    ],
+    "description": "if else"
+  },
+  "zyd IfElseIfStatement": {
+    "prefix": "ifei",
+    "body": [
+      "if (${0:condition}) {", "\t$1", "}",
+      "else if (${2:condition}) {", "\t$3", "}"
+    ],
+    "description": "if else if"
+  },
+  "zyd IfElseIfelseStatement": {
+    "prefix": "ifeie",
+    "body": [
+      "if (${0:condition}) {", "\t$1", "}",
+      "else if (${2:condition}) {", "\t$3", "}",
+      "else {", "\t$4", "}"
+    ],
+    "description": "if else if"
   },
   "zyd ElseStatement": {
     "prefix": "el",
